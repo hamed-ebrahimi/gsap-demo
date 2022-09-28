@@ -2,7 +2,17 @@
 module.exports = {
   content: ['./src/app/**/*.{html,scss,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        'phone': '3.25rem',
+        'phone-screen': '2.8rem'
+      },
+      aspectRatio: {
+        'phone': '9 / 19.5',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

@@ -1,0 +1,107 @@
+.center-items {
+    @apply
+    flex
+    justify-center 
+    items-center
+}
+.phone-aesthetics {
+    @apply
+    aspect-phone
+    rounded-phone
+    w-80
+}
+
+.main-container {
+    @apply 
+    w-full
+    h-full
+    center-items
+}
+
+.phone-chassis {
+    @apply
+    bg-black
+    border-2
+    border-red-500
+    center-items
+    phone-aesthetics
+    p-2
+}
+.phone-screen {
+    @apply
+    rounded-phone-screen
+    w-full
+    h-full
+    bg-gray-900
+    p-2
+    flex
+    flex-col
+    justify-between
+    overflow-hidden
+}
+.dynamic-island {
+    height: 20px;
+    width: 70px;
+    @apply
+    bg-black
+    rounded-full
+    relative
+    top-0
+    mx-auto
+}
+.lock-screen {
+    @apply
+    w-full
+    bg-red-500
+    z-50
+}
+.app-drawer {
+    @apply 
+    w-full
+    pt-8
+    flex
+    justify-center
+    flex-wrap
+    flex-row
+    gap-5
+    opacity-0
+}
+
+.app-icon {
+    @apply
+    rounded-lg
+    bg-indigo-600
+    w-12
+    aspect-1;
+    background: radial-gradient(circle, rgba(112,106,207,1) 0%, rgba(79,69,228,1) 100%)
+}
+
+.home-dock {
+    @apply
+    bg-slate-300
+    w-full
+    h-16
+    rounded-3xl
+    relative
+    -bottom-80
+    flex
+    flex-row
+    justify-evenly
+    items-center
+}
+.dock-icon {
+    @apply
+    -translate-x-52
+    h-12
+    aspect-1
+    bg-pink-700
+    rounded-lg
+}
+
+button {
+    @apply
+    bg-red-400
+    rounded-md
+    p-3
+    m-3
+}
